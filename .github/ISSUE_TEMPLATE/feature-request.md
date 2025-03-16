@@ -1,7 +1,7 @@
 ---
 name: Feature request
 about: Suggest an atomic idea for the project
-title: feature:[short name]
+title: feature:
 labels: ''
 assignees: ''
 
