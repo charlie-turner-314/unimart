@@ -3,15 +3,13 @@ import { router } from "expo-router";
 
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>This is the home page</Text>
-      <Button onPress={() => router.navigate("/home")}>Go To Listing Page</Button>
+    <View>
+      <Text>This is the launch page</Text>
+      <Text>Welcome to UNIMART!</Text>
+      <Button title="Sign Up" onPress={() => router.navigate("/signup")} />
+      <Button title="Login" onPress={() => router.navigate("/home")} />
+      <Button title="Go to Home Page" onPress={() => router.navigate("/home")} />
+
     </View>
   );
 }

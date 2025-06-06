@@ -21,13 +21,13 @@ const textbooks = new Array(8).fill({
 export default function HomePage() {
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.header}>UNIMART – Home Page</Text>
+      <Text style={styles.header}>UNIMART Home Page</Text>
 
       <View style={styles.topButtons}>
-        <TouchableOpacity style={styles.button}><Text style={styles.buttonText}>Sell</Text></TouchableOpacity>
-        <TouchableOpacity style={styles.button}><Text style={styles.buttonText}>Account</Text></TouchableOpacity>
-        <TouchableOpacity style={styles.button}><Text style={styles.buttonText}>Log In</Text></TouchableOpacity>
-        <TouchableOpacity style={styles.button}><Text style={[styles.buttonText]}>Sign Up</Text></TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={() => router.navigate("/createlisting")}><Text style={styles.buttonText}>Sell</Text></TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={() => router.navigate("/account")}><Text style={styles.buttonText}>Account</Text></TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={() => router.navigate("/login")}><Text style={styles.buttonText}>Log In</Text></TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={() => router.navigate("/signup")}><Text style={[styles.buttonText]}>Sign Up</Text></TouchableOpacity>
       </View>
 
       <View style={styles.searchContainer}>
