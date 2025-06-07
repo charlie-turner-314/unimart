@@ -1,16 +1,6 @@
 import React from 'react';
 import { router } from "expo-router";
-import {
-  SafeAreaView,
-  View,
-  Text,
-  TextInput,
-  Button,
-  TouchableOpacity,
-  StyleSheet,
-  Image,
-  FlatList,
-} from 'react-native';
+import {SafeAreaView,View,Text,TextInput,Button,TouchableOpacity,StyleSheet,Image,FlatList} from 'react-native';
 
 const textbooks = new Array(8).fill({
   title: 'English Txt',
@@ -60,7 +50,7 @@ export default function HomePage() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, alignItems: 'center', padding: 16, backgroundColor: '#fff' },
+  container: { flex: 1, alignItems: 'center', padding: 2, backgroundColor: '#fff' },
   header: { fontSize: 26, fontWeight: '600', marginVertical: 20 },
   topButtons: { flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', gap: 8 },
   button: {
